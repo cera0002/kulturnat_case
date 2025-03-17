@@ -1,7 +1,7 @@
 /***** COLOR VARIABLES *****/
+
 /* material-theme */
-:root {
-  /* Light */
+* {
   /* color */
   --black: #000000;
   --blue: #224bd1;
@@ -9,4 +9,24 @@
   --dark-grey: #222222;
   --light-beige: #fefbf3;
   --white: #ffffff;
+}
+
+/* gradient*/
+
+* {
+  background: var(
+    --gradient,
+    linear-gradient(
+      180deg,
+      #001c79 0%,
+      #042592 13%,
+      #224bd1 25.25%,
+      #4b6cd3 33.5%,
+      #90a6ea 50%,
+      #d6dcf1 63.5%,
+      #eeebe9 81%,
+      #f7f1eb 87%,
+      #fefbf3 100%
+    )
+  );
 }
