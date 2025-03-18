@@ -1,6 +1,7 @@
 ---
-import "../style/style.css";
-import "../style/general.css";
+import "../css/style.css";
+import "../css/general.css";
+import CardHelsingoer from "../components/CardHelsingoer.astro";
 ---
 
 <!doctype html>
@@ -11,7 +12,13 @@ import "../style/general.css";
     <title>Document</title>
   </head>
   <body>
-    <h1 class="hero">KULTURNATTEN I <br />HELSINGØR</h1>
-    <p>test</p>
+    <div class="hero_background">
+      <h1 class="hero">KULTURNATTEN I <br />HELSINGØR</h1>
+      <button></button>
+    </div>
+    <button></button>
+    <h1>PROGRAM</h1>
+    <button></button>
+    <CardHelsingoer title="HELSINGØR" />
   </body>
 </html>

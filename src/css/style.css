@@ -19,36 +19,88 @@ img {
   /* color */
   --black: #000000;
   --blue: #224bd1;
+  --light-blue: #aebdec;
   --dark-grey: #222222;
-  --light-beige: #fefbf3;
+  --beige: #fefbf3;
   --white: #ffffff;
 }
 
+/* gradient*/
+
+* {
+  --gradient: var(
+    linear-gradient(
+      180deg,
+      #001c79 0%,
+      #042592 13%,
+      #224bd1 25.25%,
+      #4b6cd3 33.5%,
+      #90a6ea 50%,
+      #d6dcf1 63.5%,
+      #eeebe9 81%,
+      #f7f1eb 87%,
+      #fefbf3 100%
+    )
+  );
+}
+
 body {
-  background-color: var(--light-beige);
+  background-color: var(--beige);
 }
 
 .hero_background {
-  background-color: var(--gradient, linear-gradient);
+  background: linear-gradient(--gradient);
+  background-repeat: no-repeat;
 }
 
 .hero {
   font-family: "Space Grotesk", sans-serif;
   font-weight: 700;
-  color: var(--light-beige);
+  font-size: 150px;
+  color: var(--beige);
+  padding-top: 400px;
 }
 
 h1 {
   font-family: "Space Grotesk", sans-serif;
   font-weight: 700;
+  font-size: 230px;
   color: var(--blue);
+}
+
+h1.darkgrey {
+  color: var(--dark-grey);
+}
+
+h1.beige {
+  color: var(--beige);
 }
 
 h2 {
   font-family: "Space Grotesk", sans-serif;
   font-weight: 500;
-  padding: 30px 10px 10px 10px;
-  color: var(--white);
+  font-size: 130px;
+  color: var(--blue);
+}
+
+h2.darkgrey {
+  color: var(--dark-grey);
+}
+
+h2.beige {
+  color: var(--beige);
+}
+
+h3 {
+  font-family: "Space Grotesk", sans-serif;
+  font-weight: 400;
+  font-size: 45px;
+  color: var(--black);
+  letter-spacing: 4px;
+}
+
+h3.beige {
+  color: var(--beige);
 }
 
 p {
@@ -58,32 +110,10 @@ p {
   color: var(--lightergrey);
 }
 
-nav {
-  padding: 10px 30px;
-  text-align: center;
+p.beige {
+  color: var(--beige);
 }
 
-button {
-  background-color: var(--darkgrey);
-  color: var(--lightgrey);
-  font-family: "Poppins", sans-serif;
-  font-weight: 400;
-  text-decoration: none;
-  padding: 10px;
-  margin: 0 10px;
-  font-size: 15px;
-  border-radius: 20px;
-  border: none;
-}
-
-button.navigation {
-  color: var(--white);
-  font-weight: 300;
-  border-radius: 30px;
-  padding: 10px 20px;
-}
-
-button.navigation:hover {
-  background-color: var(--white);
-  color: var(--darkgrey);
+p.blue {
+  color: var(--blue);
 }

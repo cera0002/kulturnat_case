@@ -5,16 +5,16 @@
   /* color */
   --black: #000000;
   --blue: #224bd1;
+  --light-blue: #aebdec;
   --dark-grey: #222222;
-  --light-beige: #fefbf3;
+  --beige: #fefbf3;
   --white: #ffffff;
 }
 
 /* gradient*/
 
 * {
-  background: var(
-    --gradient,
+  --gradient: var(
     linear-gradient(
       180deg,
       #001c79 0%,
