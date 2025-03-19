@@ -52,21 +52,20 @@ body {
   width: 100%; /* Fylder hele bredden */
 }
 
-.hero {
+header {
   font-family: "Space Grotesk", sans-serif;
   font-weight: 600;
-  font-size: 150px;
+  font-size: 63px;
   color: var(--beige);
-  letter-spacing: 10.5px;
   padding-top: 400px;
 }
 
 h1 {
   font-family: "Space Grotesk", sans-serif;
   font-weight: 700;
-  font-size: 230px;
-  letter-spacing: 16.1px;
+  font-size: 63px;
   color: var(--blue);
+  text-align: center;
 }
 
 h1.darkgrey {
@@ -95,9 +94,8 @@ h2.beige {
 h3 {
   font-family: "Space Grotesk", sans-serif;
   font-weight: 400;
-  font-size: 45px;
+  font-size: 30px;
   color: var(--black);
-  letter-spacing: 4px;
 }
 
 h3.beige {
